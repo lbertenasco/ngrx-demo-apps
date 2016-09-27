@@ -11,19 +11,34 @@ export const CounterActionTypes = {
 
 export class IncrementAction implements Action {
   type = CounterActionTypes.INCREMENT;
+  constructor() {
+    console.log('INCREMENT action');
+  }
 }
 
 export class DecrementAction implements Action {
   type = CounterActionTypes.DECREMENT;
+  constructor() {
+    console.log('DECREMENT action');
+  }
 }
 
 export class ResetAction implements Action {
   type = CounterActionTypes.RESET;
+  constructor() {
+    console.log('RESET action');
+  }
 }
 
 export class ResetSuccessAction implements Action {
   type = CounterActionTypes.RESET_SUCCESS;
+  constructor() {
+    console.log('RESET_SUCCESS action');
+  }
 }
 
-
-export type CounterAction = IncrementAction | DecrementAction | ResetAction | ResetSuccessAction;
+export type CounterActions =
+    IncrementAction
+  | DecrementAction
+  | ResetAction
+  | ResetSuccessAction;

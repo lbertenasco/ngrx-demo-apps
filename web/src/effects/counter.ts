@@ -14,7 +14,13 @@ import { Effect, Actions } from '@ngrx/effects';
 import { Observable } from 'rxjs/Observable';
 import { empty } from 'rxjs/observable/empty';
 
-import * as counter from '../actions/counter';
+//import * as counter from '../actions/counter';
+import {
+  CounterActionTypes,
+  ResetAction,
+  ResetSuccessAction
+} from 'ngrx-demo-core';
+
 
 
 /**
@@ -40,9 +46,9 @@ export class CounterEffects {
 
 
   @Effect() resetSuccess$ = this.actions$
-    .ofType(counter.CounterActionTypes.RESET)
+    .ofType(CounterActionTypes.RESET)
     // This will cause the effect to run once immediately on startup
-    .startWith(new counter.ResetAction())
-    .map(() => new counter.ResetSuccessAction());
+    .startWith(new ResetAction())
+    .map(() => new ResetSuccessAction());
 
 }

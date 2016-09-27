@@ -52,7 +52,9 @@ import { share, Selector } from '../util';
  * the state of the reducer plus any selector functions. The `* as`
  * notation packages up all of the exports into a single object.
  */
-import * as fromCounter from './counter';
+//import * as fromCounter from './counter';
+import * as fromCounter from 'ngrx-demo-core';
+
 
 
 /**
@@ -60,7 +62,7 @@ import * as fromCounter from './counter';
  * our top level state interface is just a map of keys to inner state types.
  */
 export interface State {
-  counter: fromCounter.State;
+  counter: fromCounter.CounterState;
   router: fromRouter.RouterState;
 }
 
@@ -73,7 +75,7 @@ export interface State {
  * the result from right to left.
  */
 const reducers = {
-  counter: fromCounter.reducer,
+  counter: fromCounter.counterReducer,
   router: fromRouter.routerReducer,
 };
 

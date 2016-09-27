@@ -4,7 +4,9 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
 import * as fromRoot from '../reducers';
-import * as counterActions from '../actions/counter';
+//import * as counterActions from '../actions/counter';
+import * as counterActions from 'ngrx-demo-core';
+
 
 
 @Component({
@@ -37,17 +39,14 @@ export class CounterPageComponent {
   }
 
   decrement() {
-    console.log('decrement');
     this.store.dispatch(new counterActions.DecrementAction());
   }
 
   increment() {
-    console.log('increment');
     this.store.dispatch(new counterActions.IncrementAction());
   }
 
   reset() {
-    console.log('reset');
     this.store.dispatch(new counterActions.ResetAction());
   }
 }

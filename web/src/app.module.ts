@@ -9,9 +9,13 @@ import { DBModule } from '@ngrx/db';
 import { RouterStoreModule } from '@ngrx/router-store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
+
+
 //import { MATERIAL_IMPORTS } from './material';
 //import { ComponentsModule } from './components';
+
 import { CounterEffects } from './effects/counter';
+//import { CounterEffects } from 'ngrx-demo-core';
 
 import { AppComponent } from './containers/app';
 import { CounterPageComponent } from './containers/counter-page';
@@ -22,7 +26,6 @@ import { CounterPageComponent } from './containers/counter-page';
 import { routes } from './routes';
 import { reducer } from './reducers';
 //import { schema } from './db';
-
 
 
 @NgModule({
