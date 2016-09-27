@@ -14,8 +14,11 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 //import { MATERIAL_IMPORTS } from './material';
 //import { ComponentsModule } from './components';
 
-//import { CounterEffects } from './effects/counter';
-import { CounterEffects } from 'ngrx-demo-core';
+import { CounterEffects } from './effects/counter';
+//import { CounterEffects } from 'ngrx-demo-core';
+
+import { FooModule } from './foo';
+//import { FooModule } from 'ngrx-demo-core';
 
 import { AppComponent } from './containers/app';
 import { CounterPageComponent } from './containers/counter-page';
@@ -32,7 +35,7 @@ import { reducer } from './reducers';
   imports: [
     CommonModule,
     BrowserModule,
-
+    FooModule.forRoot({name: 'Lucho'}),
     //MATERIAL_IMPORTS,
     //ComponentsModule,
 

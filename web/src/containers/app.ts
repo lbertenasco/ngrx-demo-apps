@@ -9,6 +9,7 @@ import * as fromRoot from '../reducers';
   selector: 'ngrx-demo-app',
   template: `
     <router-outlet></router-outlet>
+    <app-foo></app-foo>
   `
 })
 export class AppComponent {

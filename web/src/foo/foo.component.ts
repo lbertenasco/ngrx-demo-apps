@@ -4,7 +4,7 @@ import { FooService }      from '../foo/foo.service';
 @Component({
   selector: 'app-foo',
   template: `<p>
-    external foo works!!!
+    foo works!!!
     {{this.name}}
   </p>`
 })
