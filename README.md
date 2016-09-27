@@ -18,13 +18,11 @@ It's currently the most popular way to structure complex business logic in Angul
 
 ```
 # Clone the repo
-git clone https://github.com/benorama/ngrx-demo-apps.git
 ```
 
 Prerequisites:
 * [Typescript 1.8+](https://www.typescriptlang.org/index.html#download-links)
 * [Typings 1.0+](https://github.com/typings/typings)
-* [Angular CLI](https://cli.angular.io)
 * [Ionic CLI (from Ionic2 latest beta)](http://ionicframework.com/docs/cli/)
 
 Note: `ngrx-demo-core` module is shared between the apps with `npm link` but it could be published to `npmjs` and be used as a regular dependency.

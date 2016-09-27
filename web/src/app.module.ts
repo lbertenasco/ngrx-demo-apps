@@ -14,8 +14,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 //import { MATERIAL_IMPORTS } from './material';
 //import { ComponentsModule } from './components';
 
-import { CounterEffects } from './effects/counter';
-//import { CounterEffects } from 'ngrx-demo-core';
+//import { CounterEffects } from './effects/counter';
+import { CounterEffects } from 'ngrx-demo-core';
 
 import { AppComponent } from './containers/app';
 import { CounterPageComponent } from './containers/counter-page';
@@ -77,7 +77,7 @@ import { reducer } from './reducers';
      *
      * Source: https://github.com/ngrx/effects/blob/master/lib/run-effects.ts#L8-L20
      */
-    EffectsModule.run(CounterEffects),
+    EffectsModule.runAfterBootstrap(CounterEffects),
 
     /**
      * provideDB sets up @ngrx/db with the provided schema and makes the Database
