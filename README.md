@@ -71,7 +71,7 @@ npm install
 npm link ngrx-demo-core
 
 # Run the web app locally
-ng serve
+npm run start
 ```
 
 ### ngrx-demo-mobile app
